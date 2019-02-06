@@ -60,6 +60,9 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
+# Visual Studio
+.vs
+
 # Visual C++ cache files
 ipch/
 *.aps
