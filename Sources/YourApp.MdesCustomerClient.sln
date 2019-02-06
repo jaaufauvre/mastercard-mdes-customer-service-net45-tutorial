@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourApp.MdesCustomerClient", "src\YourApp.MdesCustomerClient\YourApp.MdesCustomerClient.csproj", "{C63A6089-259E-44ED-AF32-A4F13D3750D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YourApp.MdesCustomerClient.Test", "src\YourApp.MdesCustomerClient.Test\YourApp.MdesCustomerClient.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C63A6089-259E-44ED-AF32-A4F13D3750D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63A6089-259E-44ED-AF32-A4F13D3750D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63A6089-259E-44ED-AF32-A4F13D3750D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63A6089-259E-44ED-AF32-A4F13D3750D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0172F1E6-4B56-4B83-9E9F-CB959950B754}
+	EndGlobalSection
+EndGlobal
