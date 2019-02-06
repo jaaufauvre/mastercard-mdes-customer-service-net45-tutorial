@@ -12,7 +12,7 @@ namespace YourApp.Console
     {
         static void Main(string[] args)
         {
-            // The request was aborted: Could not create SSL/TLS secure channel
+            // "The request was aborted: Could not create SSL/TLS secure channel"
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
@@ -26,7 +26,8 @@ namespace YourApp.Console
             var tokenUniqueReference = "DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c";
             var searchRequest = new SearchRequest(null, tokenUniqueReference, null, null, null, null, null, null, auditInfo);
             var response = searchApi.SearchPost(new SearchRequestSchema(searchRequest));
-            System.Console.WriteLine(response.SearchResponse.Accounts.Account[0]);
+            System.Console.WriteLine(response.SearchResponse.Accounts.Account[0].Tokens.Token[0]);
+            System.Console.ReadLine();
         }
     }
 }
