@@ -12,12 +12,12 @@ namespace YourApp.Console
     {
         static void Main(string[] args)
         {
-            // "The request was aborted: Could not create SSL/TLS secure channel"
+            // Workaround to "The request was aborted: Could not create SSL/TLS secure channel"
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
             var consumerKey = "<insert consumer key>";
-            var signingKey = SecurityUtils.LoadPrivateKey("<insert PKCS#12 key file path>", "<insert key alias>", "<insert key password>");
+            var signingKey = SecurityUtils.LoadPrivateKey("<insert PKCS#12 key file path>", "<insert key alias>", "<insert key password>"); // Pass X509KeyStoragFlags here
             var config = Configuration.Default;
             config.BasePath = "https://sandbox.api.mastercard.com/mdes/csapi/v2";
             config.ApiClient.RestClient.Authenticator = new RestSharpOAuth1Authenticator(consumerKey, signingKey, new Uri(config.BasePath));
